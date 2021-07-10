@@ -2,7 +2,10 @@
   <h1>Recipes</h1>
   <ul>
     <li v-for="recipe in recipes" :key="recipe.id">
-      <router-link :to="{ path: `/recipe/${recipe.id}` }">
+      <router-link
+        :to="{ path: `/recipe/${recipe.id}` }"
+        @click="setRecipe(recipe)"
+      >
         {{ recipe.name }}
       </router-link>
     </li>
@@ -10,12 +13,15 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex'
+import { useStore } from "vuex";
 
-const store = useStore()
+const store = useStore();
 
-const recipes = store.getters['recipe/getRecipes']
+const recipes = store.getters["recipe/getRecipes"];
 
+const setRecipe = (recipe) => {
+  store.dispatch("recipe/setRecipe", recipe);
+};
 </script>
 
 <style scoped>

@@ -5,6 +5,6 @@ export default createStore({
   mutations: {},
   actions: {},
   modules: {
-    recipe
+    recipe,
   },
 });

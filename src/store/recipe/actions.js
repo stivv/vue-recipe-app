@@ -1,3 +1,8 @@
-export const setRecipes = ({commit}, payload) => {
-  commit('cart/setRecipes', payload)
-}
+export default {
+  setRecipes: ({ commit }, payload) => {
+    commit("setRecipes", payload);
+  },
+  setRecipe: ({ commit }, payload) => {
+    commit("setRecipe", payload);
+  },
+};

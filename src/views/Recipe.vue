@@ -1,5 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is recipe {{ $route.params.id }}</h1>
+    <h1>{{ recipe.name }}</h1>
+    <p v-html="recipe.description"></p>
   </div>
 </template>
+
+<script setup>
+import { useStore } from "vuex";
+
+const store = useStore();
+
+const recipe = store.getters["recipe/getRecipe"];
+</script>
