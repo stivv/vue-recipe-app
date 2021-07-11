@@ -1,18 +1,29 @@
 export default {
   recipes: [
-    { id: 1, name: "Recipe 1", description: `
-    How to make pilau
-    LISA KAHUTHUMARCH 13, 2018
-    1 MIN READ
-    0
-    SHARES
-    000
-    
-     
-    Pilau is one of the most popular rice dishes around. This tasty coastal dish never misses on the menu at social gatherings and is a regular in many homes. This recipe will ensure a delicious meal which is easy to prepare. <ul><li>Ingredients</li><li>paprika</li></ul>` },
-    { id: 2, name: "Recipe 2", description: "this is the description" },
-    { id: 3, name: "Recipe 3", description: "this is the description" },
-    { id: 4, name: "Recipe 4", description: "this is the description" },
+    {
+      id: 1,
+      name: "Recipe 1",
+      ingredients: "ingredient1,ingredient1",
+      how_to_make: "mix ingredient1, cook ingredient1.",
+    },
+    {
+      id: 2,
+      name: "Recipe 2",
+      ingredients: "ingredient2,ingredient2",
+      how_to_make: "mix ingredient2, cook ingredient2.",
+    },
+    {
+      id: 3,
+      name: "Recipe 3",
+      ingredients: "ingredient3,ingredient3",
+      how_to_make: "mix ingredient3, cook ingredient3.",
+    },
+    {
+      id: 4,
+      name: "Recipe 4",
+      ingredients: "ingredient4,ingredient4",
+      how_to_make: "mix ingredient4, cook ingredient4.",
+    },
   ],
   recipe: {},
 };

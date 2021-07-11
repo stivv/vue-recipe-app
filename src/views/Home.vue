@@ -24,13 +24,13 @@ const setRecipe = (recipe) => {
 };
 </script>
 
-<style scoped>
+<style>
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 ul li {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 </style>

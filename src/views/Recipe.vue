@@ -1,14 +1,26 @@
 <template>
   <div class="about">
     <h1>{{ recipe.name }}</h1>
-    <p v-html="recipe.description"></p>
+    <h4>Ingredients:</h4>
+    <ul>
+      <li v-for="(ingredient, idx) in recipe.ingredients.split(',')" :key="idx">
+        {{ ingredient }}
+      </li>
+    </ul>
+    <h4>How to cook:</h4>
+    <p v-html="recipe.how_to_make"></p>
   </div>
 </template>
 
 <script setup>
 import { useStore } from "vuex";
+// import { useRouter } from "vue-router";
+// import { onMounted } from "vue";
 
 const store = useStore();
+// const router = useRouter();
 
 const recipe = store.getters["recipe/getRecipe"];
+
+// onMounted()
 </script>
