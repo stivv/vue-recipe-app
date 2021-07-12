@@ -5,4 +5,7 @@ export default {
   setRecipe: ({ commit }, payload) => {
     commit("setRecipe", payload);
   },
+  deleteRecipe: ({ commit }, payload) => {
+    commit("deleteRecipe", payload);
+  },
 };
