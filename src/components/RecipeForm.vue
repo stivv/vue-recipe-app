@@ -42,9 +42,9 @@ const props = defineProps(["recipe"]);
 const store = useStore();
 
 let form = reactive({
-  name: "", //Object.keys(props.recipe).length ? props.recipe.name : "",
-  ingredients: "", //Object.keys(props.recipe).length ? props.recipe.ingredients : "",
-  how_to_make: "", //Object.keys(props.recipe).length ? props.recipe.how_to_make : "",
+  name: "",
+  ingredients: "",
+  how_to_make: "",
 });
 
 const saveRecipe = () => {

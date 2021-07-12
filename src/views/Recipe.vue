@@ -14,13 +14,8 @@
 
 <script setup>
 import { useStore } from "vuex";
-// import { useRouter } from "vue-router";
-// import { onMounted } from "vue";
 
 const store = useStore();
-// const router = useRouter();
 
 const recipe = store.getters["recipe/getRecipe"];
-
-// onMounted()
 </script>
